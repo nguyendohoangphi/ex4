@@ -1,0 +1,182 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+header img{
+    width: 40px;
+    margin-right: 5px;
+}
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav {
+    margin-left: auto; 
+}
+header {
+    padding: 20px;
+    background: #f4f4f4;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.intro {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+  
+}
+.intro h1 {
+    font-size: 2.5rem; 
+    margin: 0; 
+}
+nav ul.abc {
+    list-style: none; /*remove . */
+    display: flex; 
+    gap: 30px; /* space */
+}
+
+
+nav ul.abc li::after {
+    content: " /"; 
+}
+
+nav ul.abc li:last-child::after {
+    content: ""; /* remove "/" cuoi cung */
+}
+
+
+ul li a {
+    text-decoration: none; /* remove ___ */
+    color: black; 
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+main {
+    padding: 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between; /* sap xeu = nhau */
+    flex-wrap: wrap;
+    gap: 20px; /* khoang cach of container */
+}
+
+.projects, .work-experience, .education {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.projects ul{
+    display: flex;
+    flex-direction: column; 
+    padding: 0;
+    list-style: none;
+}
+.projects ul li{
+    position: relative; 
+    padding-bottom: 5px; 
+}
+
+
+
+ .education ul {
+    padding-left: 20px;
+}
+
+.education ul li {
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+.reviews {
+    margin-top: 40px;
+}
+
+.review-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.review {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+
+}
+.review cite {
+    opacity: 0.6;
+}
+#abb {
+    opacity: 0.6; 
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #f4f4f4;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .review-list {
+        flex-direction: column;
+    }
+}
+
+
+a {
+    text-decoration: none; 
+   
+}
+
+:root {
+    --bg-color: white;
+    --text-color: black;
+}
+
+body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+}
+.dark-mode {
+    --bg-color: black;
+    --text-color: white;
+}

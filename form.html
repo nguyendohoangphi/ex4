@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+    <button onclick="document.body.classList.toggle('dark-mode')">Toggle Dark Mode</button>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="https://hcmiu.edu.vn/"><img src="IU.jpg" alt="Logo" style="width: 80px;">
+                <span class="navbar-logo-text text-dark font-weight-bold">NguyễnĐỗHoàngPhi</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+       
+        <section class="intro text-center mt-4">
+            <h1 class="display-4">Frontend Developer</h1>
+            <p id="abb" class="lead">html only with proper layout, no styling</p>
+        </section>
+    </header>
+
+    <main>
+        
+
+        <div class="container">
+            <section class="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>HTML Only Portfolio</li>
+                    <li>Calculator</li>
+                    <li>Quiz App</li>
+                    <li>Countdown Timer</li>
+                    <li>Product Upcoming Page</li>
+                </ul>
+            </section>
+
+            <section class="work-experience">
+                <h2>Work Experience</h2>
+                <p><strong>roadmap.sh</strong><br>Solved all the frontend projects</p>
+                <a href="https://hcmiu.edu.vn/">Visit my Profile</a>
+
+                <p><strong>OpenSource Work</strong><br>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
+                <a href="https://hcmiu.edu.vn/">Visit my GitHub Profile</a>
+            </section>
+
+            <section class="education">
+                <h2>Education</h2>
+                <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+                <ul>
+                    <li>Object-Oriented Programming</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Web Engineering</li>
+                    <li>Artificial Intelligence</li>
+                    <li>...and more</li>
+                </ul>
+            </section>
+        </div>
+
+        <section class="reviews">
+            <h2>Reviews from my Teachers</h2>
+            <div class="review-list">
+                <div class="review">
+                    <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+                    <cite>Jane Doe, Assistant Professor</cite>
+                </div>
+                <div class="review">
+                    <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+                    <cite>Jane Doe, Assistant Professor</cite>
+                </div>
+                <div class="review">
+                    <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+                    <cite>Jane Doe, Assistant Professor</cite>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© all rights reserved 2025</p>
+    </footer>
+
+    <section class="contact mt-5">
+        <h2>Contact Me</h2>
+        <form>
+            <div class="form-group mt-5">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group mt-5">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group mt-5">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+    
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
